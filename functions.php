@@ -71,9 +71,11 @@ function display_all_posts_shortcode($atts) {
             $output .= '</div>';
             $output .= '</div>';
         }
+       
         wp_reset_postdata();
     } else {
-        $output = '<p>No posts found.</p>';
+        $output = '<p>No posts</p>';
+        
     }
 
     return $output;
