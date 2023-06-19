@@ -1,7 +1,4 @@
 <?php
-
-
-// Enqueuing
 function load_css()
 {
 
@@ -26,18 +23,25 @@ function load_js()
 add_action('wp_enqueue_scripts', 'load_js');
 
 
-// Nav Menus
+
 register_nav_menus( array(
     'top-menu' => __( 'Top Menu', 'theme' ),
     'footer-menu' => __( 'Footer Menu', 'theme' ),
 ) );
 
-// Theme Support
+
 add_theme_support('menus');
 add_theme_support( 'post-thumbnails' );
 
-// Image Sizes
+
 add_image_size('small', 600, 600, false);
+
+
+
+
+
+
+
 
 
 function display_all_posts_shortcode($atts) {
@@ -81,8 +85,6 @@ function display_all_posts_shortcode($atts) {
     return $output;
 }
 add_shortcode('display_all_posts', 'display_all_posts_shortcode');
-
-
 
 
 

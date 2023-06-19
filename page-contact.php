@@ -10,9 +10,8 @@ get_header();
 $image = get_field('image');
 $picture = $image['sizes']['large'];
 
-// Check if the form is submitted
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  // Get the form values
   $name = $_POST['name'];
   $surname = $_POST['surname'];
   $age = $_POST['age'];
@@ -20,8 +19,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $gender = $_POST['gender'];
   $message = $_POST['message'];
 
-  // Compose the email
-  $to = 'pranvera.halili243@gmail.com'; // Replace with the recipient's email address
+
+  $to = 'pranvera.halili243@gmail.com'; 
   $subject = 'Contact Form Submission';
   $body = "Name: $name $surname\n";
   $body .= "Age: $age\n";
@@ -29,14 +28,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $body .= "Gender: $gender\n";
   $body .= "Message:\n$message";
 
-  // Set additional headers
+
   $headers = "From: $name $surname <$email>\r\n";
   $headers .= "Reply-To: $email\r\n";
 
-  // Send the email
+
   $sent = mail($to, $subject, $body, $headers);
 
-  // Check if the email was sent successfully
+
   if ($sent) {
     echo '<p>Email sent successfully!</p>';
   } else {
