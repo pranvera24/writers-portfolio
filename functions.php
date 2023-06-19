@@ -61,12 +61,14 @@ function display_all_posts_shortcode($atts) {
                 $output .= '</div>';
             }
             $output .= '<div class="content">' . get_the_content() . '</div>';
-            // Add file download link if available
+            
+            $output .= '<div class="file">';
             $file = get_field('upload_file');
             $fileurl = ($file && isset($file['url'])) ? $file['url'] : '';
             if ($fileurl) {
-                $output .= '<a href="' . $fileurl . '" download>Read the book</a>';
+                $output .= '<a href="' . $fileurl . '" download class="read-btn">Read the book</a>';
             }
+            $output .= '</div>';
             $output .= '</div>';
         }
         wp_reset_postdata();
@@ -137,7 +139,7 @@ function display_posts_by_category_shortcode($atts) {
             }
 
             if ($link) {
-                $output .= '<div class="post-link"><a href="' . $link . '">Read the full story. </a></div>';
+                $output .= '<div class="post-link"><a href="' . $link . '">Check out the writing.</a></div>';
             }
 
             $output .= '</div>'; 
