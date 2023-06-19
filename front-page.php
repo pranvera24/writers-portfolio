@@ -32,7 +32,7 @@ $publication_details = get_field('publication_details')
 
         <div class="portfolio-section" id="portfolio">
   <div class="container bordered-section">
-    <h2 style="color:whitesmoke;padding:10px;font-family: 'Roboto Mono', monospace;">About Me.</h2>
+    <h2 class="about-btn">About Me.</h2>
     <div class="row">
       <div class="col-md-3 about-image">
         <img src="<?php echo $picture; ?>" class="about-picture img-fluid rounded border border-white" />
@@ -56,7 +56,7 @@ $publication_details = get_field('publication_details')
           <p><a href="https://www.facebook.com/">@facebook</a></p>
           <h4>Twitter:</h4>
           <p><a href="">@example</a></p>
-          <a href="#writings" class="btn writings-btn" style="color:whitesmoke;border:1px solid whitesmoke;border-radius:10px:font-family: 'Roboto Mono', monospace;">Writings</a>
+          <a href="#writings" class="btn writings-btn">Writings</a>
         </div>
       </div>
       <div class="col-md-3 my-auto">
