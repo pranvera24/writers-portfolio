@@ -1,0 +1,31 @@
+/* 
+Theme Name: Writer's Portfolio
+Author: Pranvera Halili
+Version 1.0.0
+Description:Hello this is the one you are looking for
+*/
+
+body {
+    background: #3C3C3C;
+    padding: 2rem 0;
+  }
+  
+  .page .container {
+    padding: 2rem;
+    background: #d40f0f;
+  }
+  
+  header.main ul {
+    display: flex;
+    justify-content: center;
+  }
+  header.main li {
+    list-style-type: none;
+  }
+  
+  header.main li a {
+    padding: 0 1.5rem;
+    display: block;
+  }
+
+  

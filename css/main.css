@@ -1,0 +1,121 @@
+.page {
+  margin-top: 20px;
+  background-color: #101010;
+  
+}
+
+.page .container {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1470px; /* Adjust the max-width value to fit your needs */
+  background-color: #101010;
+  
+  
+}
+
+
+
+
+
+.image-section {
+  text-align: center;
+  border: 2px solid whitesmoke;
+  border-radius: 15px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.quote-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.quote-overlay h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.quote-overlay .btn {
+  background-color: #101010;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+
+}
+
+.writings-btn{
+  color:whitesmoke;
+  border:1px solid whitesmoke;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #101010;
+}
+
+.writings-btn :hover{
+  color:whitesmoke;
+  border:1px solid whitesmoke;
+  font-family: 'Roboto Mono', monospace;
+  background-color: whitesmoke;
+}
+
+
+
+header.main ul {
+  display: flex;
+  justify-content: right;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  color: whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  padding-bottom: 3px;
+
+  
+}
+header.main li {
+  list-style-type: none;
+ 
+}
+
+header.main h2{
+  display: flex;
+  justify-content: left;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  color: whitesmoke;
+  padding: 0 1.5rem;
+  margin-top: 10px;
+
+}
+
+header.main li a  {
+  padding: 0 1.5rem;
+  display: block;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+header.main li a :hover  {
+  padding: 0 1.5rem;
+  display: block;
+  text-decoration: none;
+  color: whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  margin-bottom: 5px;
+}
+
+
+.homeimg{
+  width: 100%;
+}
+
+
+
+
