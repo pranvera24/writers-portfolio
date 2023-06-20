@@ -5,6 +5,9 @@ Template Name: Contact Page
 ?>
 
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 get_header();
 
 $image = get_field('image');
@@ -33,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $headers .= "Reply-To: $email\r\n";
 
 
-  $sent = mail($to, $subject, $body, $headers);
+  $sent = wp_mail($to, $subject, $body, $headers);
 
 
   if ($sent) {
